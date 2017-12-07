@@ -1,0 +1,117 @@
+@import "../../less/main";
+
+.index-container{
+  width: 100%;
+  height: 1050px;
+  background: url("~images/bg.png");
+  .header-top{
+    width: 100%;
+    height: 30px;
+    background-color: #707070;
+    box-shadow: inset 0px -3px 5px #626262;
+    .top-main{
+      width: 1000px;
+      height: 30px;
+      margin: 0 auto;
+    }
+    .top-announcement{
+      max-width: 500px;
+      float: left;
+      .ant-carousel .slick-slide {
+        text-align: left;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        font-size: 12px;
+      }
+      .ant-carousel .slick-slide h3 {
+        color: @white-color;
+      }
+    }
+    .top-btn-group{
+      float: right;
+      .top-btn{
+        display: inline-block;
+        padding: 2px 10px;
+        margin-right: 10px;
+        color: @white-color;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 4px;
+        background: transparent;
+        transition: background 1s;
+        img{
+          vertical-align: sub;
+          margin-right: 3px;
+        }
+        &:hover{
+          border-radius: 20px;
+          background: linear-gradient(to bottom,#ff5f5f,#ff0808);
+        }
+      }
+    }
+  }
+  .header-bottom{
+    width: 100%;
+    height: 66px;
+    background-color: #15b8c2;
+    border-bottom: 2px solid #016066;
+    .bottom-main{
+      width: 1000px;
+      height: 66px;
+      margin: 0 auto;
+      .logo-box{
+        float: left;
+        margin-top: 10px;
+      }
+      .entry-list{
+        float: right;
+        height: 66px;
+      }
+      .entry-info{
+        font-size: 14px;
+        display: inline-block;
+        width: 85px;
+        height: 66px;
+        a{
+          display: block;
+          width: 100%;
+          height: 66px;
+          line-height: 66px;
+          color: @white-color;
+          position: relative;
+          text-align: center;
+          background: transparent;
+          transition: background 1s;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 15px;
+            background-color: rgba(255,255,255,.5);
+            top: 25.5px;
+            right: 0px;
+          }
+          &:hover{
+            background: #016066;
+          }
+        }
+        &:last-child{
+          a{
+            &:after{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container-box{
+    width: 100%;
+    .children-box{
+      width: 1000px;
+      margin: 0 auto;
+      box-shadow: 0px 0px 5px #b2b2b2;
+    }
+  }
+}
